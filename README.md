@@ -1,8 +1,8 @@
-TaskNest (MERN)
+# TaskNest (MERN)
 
 Dự án mẫu MERN quản lý công việc cá nhân: CRUD + filter + phân trang + thống kê.
 
-📂 Cấu trúc & Yêu cầu
+## 📂 Cấu trúc & Yêu cầu
 tasknest/
 ├─ client/                 # React (Vite + Tailwind)
 │  └─ .env.example
@@ -17,7 +17,7 @@ Node.js LTS (18.x/20.x), npm
 
 MongoDB Atlas (khuyến nghị) hoặc MongoDB local
 
-⚙️ Chạy Backend (server)
+## ⚙️ Chạy Backend (server)
 cd server
 cp .env.example .env   # nhớ sửa MONGO_URI nếu dùng Atlas
 npm install
@@ -41,11 +41,11 @@ DELETE /api/todos/:id
 
 GET /api/todos/stats → { done, undone, total }
 
-💻 Chạy Frontend (client)
+## 💻 Chạy Frontend (client)
 cd client
 npm install
-# nếu backend khác origin, tạo file .env và thêm:
-# VITE_API_BASE=https://<your-api-host>/api
+## nếu backend khác origin, tạo file .env và thêm:
+## VITE_API_BASE=https://<your-api-host>/api
 npm run dev
 
 
@@ -53,7 +53,7 @@ App chạy ở http://localhost:5173
 
 Mặc định gọi API http://localhost:5000/api
 
-🔑 Biến môi trường (env)
+## 🔑 Biến môi trường (env)
 server/.env.example
 PORT=5000
 MONGO_URI=YOUR_MONGODB_ATLAS_URI   # ví dụ: mongodb+srv://user:pass@cluster0.xxx.mongodb.net/tasknest
@@ -62,7 +62,7 @@ CLIENT_URL=http://localhost:5173
 client/.env.example
 VITE_API_BASE=http://localhost:5000/api
 
-🚀 Deploy (tóm tắt)
+## 🚀 Deploy (tóm tắt)
 
 Backend: Render / Railway
 
@@ -72,7 +72,7 @@ Frontend: Vercel / Netlify
 
 Env: VITE_API_BASE=https://<api-host>/api
 
-📑 API Spec (rút gọn)
+## 📑 API Spec (rút gọn)
 
 Base URL: /api/todos
 
